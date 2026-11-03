@@ -1,0 +1,14 @@
+{
+  "name": "tendo-latex-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "tex",
+          "plaintex"
+        ],
+        "path": "./tex.json"
+      }
+    ]
+  }
+}

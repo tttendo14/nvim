@@ -1,0 +1,192 @@
+{
+  "Bold text": {
+    "prefix": "textbf",
+    "body": "\\textbf{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap text in \\textbf"
+  },
+  "Italic text": {
+    "prefix": "textit",
+    "body": "\\textit{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap text in \\textit"
+  },
+  "Emphasized text": {
+    "prefix": "emph",
+    "body": "\\emph{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap text in \\emph"
+  },
+  "Monospace text": {
+    "prefix": "texttt",
+    "body": "\\texttt{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap text in \\texttt"
+  },
+  "Upright math": {
+    "prefix": "up",
+    "body": "\\mathup{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap math in \\mathup"
+  },
+  "Italic math": {
+    "prefix": "it",
+    "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap math in \\mathit"
+  },
+  "Monospace math": {
+    "prefix": "tt",
+    "body": "\\texttt{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Wrap text in \\texttt"
+  },
+  "Text in math mode": {
+    "prefix": "text",
+    "body": "\\text{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "Insert text in a mathematical expression"
+  },
+  "Lemma environment": {
+    "prefix": "lemm",
+    "body": [
+      "\\begin{lemma}",
+      "  ${0}",
+      "\\end{lemma}"
+    ],
+    "description": "Numbered lemma environment"
+  },
+  "Lemma environment with title": {
+    "prefix": "lemm*",
+    "body": [
+      "\\begin{lemma}[${1:title}]",
+      "  ${0}",
+      "\\end{lemma}"
+    ],
+    "description": "Numbered lemma environment with a title"
+  },
+  "Definition environment": {
+    "prefix": "defi",
+    "body": [
+      "\\begin{definition}",
+      "  ${0}",
+      "\\end{definition}"
+    ],
+    "description": "Numbered definition environment"
+  },
+  "Definition environment with title": {
+    "prefix": "defi*",
+    "body": [
+      "\\begin{definition}[${1:title}]",
+      "  ${0}",
+      "\\end{definition}"
+    ],
+    "description": "Numbered definition environment with a title"
+  },
+  "Proposition environment": {
+    "prefix": "prop",
+    "body": [
+      "\\begin{proposition}",
+      "  ${0}",
+      "\\end{proposition}"
+    ],
+    "description": "Numbered proposition environment"
+  },
+  "Proposition environment with title": {
+    "prefix": "prop*",
+    "body": [
+      "\\begin{proposition}[${1:title}]",
+      "  ${0}",
+      "\\end{proposition}"
+    ],
+    "description": "Numbered proposition environment with a title"
+  },
+  "Theorem environment": {
+    "prefix": "theo",
+    "body": [
+      "\\begin{theorem}",
+      "  ${0}",
+      "\\end{theorem}"
+    ],
+    "description": "Numbered theorem environment"
+  },
+  "Theorem environment with title": {
+    "prefix": "theo*",
+    "body": [
+      "\\begin{theorem}[${1:title}]",
+      "  ${0}",
+      "\\end{theorem}"
+    ],
+    "description": "Numbered theorem environment with a title"
+  },
+  "Corollary environment": {
+    "prefix": "coro",
+    "body": [
+      "\\begin{corollary}",
+      "  ${0}",
+      "\\end{corollary}"
+    ],
+    "description": "Numbered corollary environment"
+  },
+  "Corollary environment with title": {
+    "prefix": "coro*",
+    "body": [
+      "\\begin{corollary}[${1:title}]",
+      "  ${0}",
+      "\\end{corollary}"
+    ],
+    "description": "Numbered corollary environment with a title"
+  },
+  "Inner product": {
+    "prefix": "inn",
+    "body": "\\inn{${1:${TM_SELECTED_TEXT:a, b}}}$0",
+    "description": "Insert an inner product"
+  },
+  "Norm": {
+    "prefix": "norm",
+    "body": "\\norm{${1:${TM_SELECTED_TEXT:x}}}$0",
+    "description": "Insert a norm"
+  },
+  "Summation": {
+    "prefix": "sum",
+    "body": "\\sum_{${1:i=1}}^{${2:n}} ${3:${TM_SELECTED_TEXT:term}}$0",
+    "description": "Summation with lower and upper bounds"
+  },
+  "Product": {
+    "prefix": "prod",
+    "body": "\\prod_{${1:i=1}}^{${2:n}} ${3:${TM_SELECTED_TEXT:term}}$0",
+    "description": "Product with lower and upper bounds"
+  },
+  "EECS 376 algorithm": {
+    "prefix": "algorithm",
+    "body": [
+      "\\begin{algorithm}[H]",
+      "    \\begin{algorithmic}[1]",
+      "        \\Require{${1:input}}",
+      "        \\Ensure{${2:output}}",
+      "        \\Statex",
+      "        \\Function{${3:Name}}{${4:arguments}}",
+      "        ${0}",
+      "        \\EndFunction",
+      "    \\end{algorithmic}",
+      "\\end{algorithm}"
+    ],
+    "description": "Algorithm/algorithmic block in the EECS 376 homework style"
+  },
+  "EECS 376 table": {
+    "prefix": "table",
+    "body": [
+      "\\begin{table}[H]\\centering",
+      "    \\begin{tabular}{${1:c|c}}",
+      "        ${2:Heading 1} & ${3:Heading 2} \\\\ \\hline",
+      "        ${4:Value 1} & ${5:Value 2} \\\\",
+      "        ${0}",
+      "    \\end{tabular}",
+      "\\end{table}"
+    ],
+    "description": "Floating table in the EECS 376 homework style"
+  },
+  "Tabular": {
+    "prefix": "tabular",
+    "body": [
+      "\\begin{tabular}{${1:c|c}}",
+      "    ${2:Heading 1} & ${3:Heading 2} \\\\ \\hline",
+      "    ${4:Value 1} & ${5:Value 2} \\\\",
+      "    ${0}",
+      "\\end{tabular}"
+    ],
+    "description": "Standalone tabular environment"
+  }
+}
